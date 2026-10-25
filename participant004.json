@@ -1,0 +1,21 @@
+{
+  "participant_code": "004",
+  "domain_background": {
+    "cloud_experience": "Moderate",
+    "billing_experience": "Limited",
+    "budget_management_experience": "Limited"
+  },
+  "behavioral_profile": {
+    "accuracy_orientation": 5,
+    "persistence": 4,
+    "consequence_caution": 5,
+    "attention_orientation": 5,
+    "information_seeking": 4,
+    "help_seeking": 4
+  },
+  "current_state": {
+    "fatigue": 2,
+    "current_time_pressure": 2,
+    "current_focus": 2
+  }
+}
