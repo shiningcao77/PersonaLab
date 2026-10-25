@@ -3,6 +3,9 @@ import argparse, csv, json, os, re, time, uuid
 from pathlib import Path
 from urllib.parse import urlparse
 from openai import OpenAI
+
+def log(message):
+    print(f"[PersonaLab] {message}", flush=True)
 from playwright.sync_api import sync_playwright
 
 URL = "https://shiningcao77.github.io/Billing_Config/"
@@ -39,11 +42,13 @@ def observe(page):
             "elements":elements}
 
 def choose(client,model,profile,task,obs,history):
+    log(f"Sending model request: {model}")
     reply=client.chat.completions.create(
         model=model,temperature=0.5,
         messages=[{"role":"system","content":SYSTEM},
                   {"role":"user","content":json.dumps({"profile":profile,"task":task,
                     "observation":obs,"recent_actions":history[-8:]},ensure_ascii=False)}])
+    log("Model response received")
     raw=(reply.choices[0].message.content or "").strip()
     raw=re.sub(r'^\\x60{3}(?:json)?\\s*|\\s*\\x60{3}$','',raw)
     try: return json.loads(raw)
@@ -88,13 +93,15 @@ def main():
     if not args.model: parser.error("Set OPENAI_MODEL to a model supported by your Cornell gateway.")
     if args.runs<1 or args.steps<1: parser.error("Positive runs and steps required")
     base=os.getenv("OPENAI_BASE_URL","https://api.ai.it.cornell.edu")
-    client=OpenAI(api_key=os.environ["OPENAI_API_KEY"],**({"base_url":base} if base else {}))
+    client=OpenAI(api_key=os.environ["OPENAI_API_KEY"],timeout=30.0,max_retries=0,**({"base_url":base} if base else {}))
     profile=json.loads(Path(args.profile).read_text())
     task=Path(args.task).read_text()
     output=Path("browser_results"); output.mkdir(exist_ok=True)
     summary=[]
     with sync_playwright() as playwright:
-        browser=playwright.chromium.launch(headless=not args.headed)
+        log("Launching Chromium")
+        browser=playwright.chromium.launch(headless=not args.headed,timeout=20000)
+        log("Chromium launched")
         try:
             for _ in range(args.runs):
                 ctx=browser.new_context(accept_downloads=False,viewport={"width":1360,"height":850})
@@ -102,12 +109,17 @@ def main():
                 rid=str(profile.get("participant_code","participant"))+"_"+uuid.uuid4().hex[:8]
                 events=[];history=[];start=time.monotonic();status="step_limit"
                 try:
-                    page.goto(URL,wait_until="domcontentloaded",timeout=30000)
+                    log(f"Opening {URL}")
+                    page.goto(URL,wait_until="domcontentloaded",timeout=20000)
+                    log(f"Page loaded: {page.url}")
                     for seq in range(args.steps):
                         if not permitted(page.url):
                             status="out_of_scope_navigation"; break
+                        log(f"Step {seq+1}/{args.steps}: inspecting {page.url}")
                         obs=observe(page)
+                        log(f"Step {seq+1}: found {len(obs['elements'])} controls")
                         choice=choose(client,args.model,profile,task,obs,history)
+                        log(f"Step {seq+1}: action={choice.get('action')} target={choice.get('target')}")
                         event={"seq":seq+1,"elapsed_ms":round((time.monotonic()-start)*1000),
                                "page":obs["url"],"action":choice.get("action"),
                                "target":choice.get("target"),"value":choice.get("value"),
@@ -122,9 +134,11 @@ def main():
                         except Exception as e:
                             event["status"]="action_error";event["error"]=str(e)[:400]
                         events.append(event)
+                        log(f"Step {seq+1}: {event['status']}")
                         history.append({k:event.get(k) for k in ("action","target","value","status")})
                 except Exception as e:
                     status="runtime_error"
+                    log(f"Run error: {type(e).__name__}: {str(e)[:350]}")
                     events.append({"status":status,"error":str(e)[:800]})
                 finally:
                     try: page.screenshot(path=str(output/(rid+".png")),full_page=True,timeout=6000)
@@ -135,6 +149,7 @@ def main():
                     (output/(rid+".json")).write_text(json.dumps({"run_id":rid,"model":args.model,
                         "status":status,"events":events,"local_budget_state":saved,
                         "note":"Completion declarations do not prove task success; grade separately."},indent=2))
+                    log(f"Run {rid}: status={status} actions={len(events)}")
                     summary.append({"run_id":rid,"status":status,"actions":len(events)})
                     ctx.close()
         finally: browser.close()
