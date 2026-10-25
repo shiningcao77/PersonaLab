@@ -1,0 +1,3873 @@
+[
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 100,
+    "completed": true,
+    "correct": false,
+    "actions": 20,
+    "errors": [
+      "navigation",
+      "scope_default"
+    ],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 1000,
+      "threshold": 50,
+      "actual": true,
+      "owners": true,
+      "admins": false
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "wrong_turn",
+        "detail": "navigation uncertainty"
+      },
+      {
+        "seq": 3,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 5,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 7,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 9,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "all_projects"
+        }
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 11,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 1000
+        }
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 13,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 50,
+          "owners": true,
+          "admins": true
+        }
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 15,
+        "step": "review",
+        "event": "review",
+        "detail": "inspect settings"
+      },
+      {
+        "seq": 16,
+        "step": "review",
+        "event": "correction",
+        "detail": "scope"
+      },
+      {
+        "seq": 17,
+        "step": "review",
+        "event": "correction",
+        "detail": "admins"
+      },
+      {
+        "seq": 18,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 19,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 1000,
+          "threshold": 50,
+          "actual": true,
+          "owners": true,
+          "admins": false
+        }
+      },
+      {
+        "seq": 20,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 101,
+    "completed": true,
+    "correct": false,
+    "actions": 19,
+    "errors": [
+      "navigation",
+      "scope_default"
+    ],
+    "saved": {
+      "scope": "all_projects",
+      "amount": 800,
+      "threshold": 100,
+      "actual": true,
+      "owners": true,
+      "admins": false
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 3,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "wrong_turn",
+        "detail": "navigation uncertainty"
+      },
+      {
+        "seq": 5,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 7,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 9,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "all_projects"
+        }
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 11,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 800
+        }
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 13,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 100,
+          "owners": false,
+          "admins": false
+        }
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 15,
+        "step": "review",
+        "event": "review",
+        "detail": "inspect settings"
+      },
+      {
+        "seq": 16,
+        "step": "review",
+        "event": "correction",
+        "detail": "owners"
+      },
+      {
+        "seq": 17,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 18,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "all_projects",
+          "amount": 800,
+          "threshold": 100,
+          "actual": true,
+          "owners": true,
+          "admins": false
+        }
+      },
+      {
+        "seq": 19,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 102,
+    "completed": true,
+    "correct": false,
+    "actions": 18,
+    "errors": [
+      "navigation",
+      "navigation"
+    ],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 800,
+      "threshold": 100,
+      "actual": true,
+      "owners": true,
+      "admins": true
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "wrong_turn",
+        "detail": "navigation uncertainty"
+      },
+      {
+        "seq": 3,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 5,
+        "step": "open_budgets",
+        "event": "wrong_turn",
+        "detail": "navigation uncertainty"
+      },
+      {
+        "seq": 6,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 7,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 8,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 9,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 10,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "Atlas"
+        }
+      },
+      {
+        "seq": 11,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 12,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 800
+        }
+      },
+      {
+        "seq": 13,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 14,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 100,
+          "owners": true,
+          "admins": true
+        }
+      },
+      {
+        "seq": 15,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 16,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 17,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 800,
+          "threshold": 100,
+          "actual": true,
+          "owners": true,
+          "admins": true
+        }
+      },
+      {
+        "seq": 18,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 103,
+    "completed": true,
+    "correct": false,
+    "actions": 18,
+    "errors": [
+      "scope_default"
+    ],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 1000,
+      "threshold": 50,
+      "actual": true,
+      "owners": true,
+      "admins": false
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 3,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 5,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 7,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "all_projects"
+        }
+      },
+      {
+        "seq": 9,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 1000
+        }
+      },
+      {
+        "seq": 11,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 50,
+          "owners": true,
+          "admins": false
+        }
+      },
+      {
+        "seq": 13,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "review",
+        "detail": "inspect settings"
+      },
+      {
+        "seq": 15,
+        "step": "review",
+        "event": "correction",
+        "detail": "scope"
+      },
+      {
+        "seq": 16,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 17,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 1000,
+          "threshold": 50,
+          "actual": true,
+          "owners": true,
+          "admins": false
+        }
+      },
+      {
+        "seq": 18,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 104,
+    "completed": true,
+    "correct": false,
+    "actions": 19,
+    "errors": [
+      "scope_default"
+    ],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 800,
+      "threshold": 50,
+      "actual": true,
+      "owners": true,
+      "admins": true
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 3,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 5,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 7,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "all_projects"
+        }
+      },
+      {
+        "seq": 9,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 800
+        }
+      },
+      {
+        "seq": 11,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 50,
+          "owners": true,
+          "admins": true
+        }
+      },
+      {
+        "seq": 13,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "review",
+        "detail": "inspect settings"
+      },
+      {
+        "seq": 15,
+        "step": "review",
+        "event": "correction",
+        "detail": "scope"
+      },
+      {
+        "seq": 16,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 17,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 800,
+          "threshold": 50,
+          "actual": true,
+          "owners": true,
+          "admins": true
+        }
+      },
+      {
+        "seq": 18,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      },
+      {
+        "seq": 19,
+        "step": "confirm",
+        "event": "confirmation_checked",
+        "detail": "budget list"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 105,
+    "completed": true,
+    "correct": false,
+    "actions": 19,
+    "errors": [
+      "scope_default"
+    ],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 1000,
+      "threshold": 80,
+      "actual": true,
+      "owners": true,
+      "admins": true
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 3,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 5,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 7,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "all_projects"
+        }
+      },
+      {
+        "seq": 9,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 1000
+        }
+      },
+      {
+        "seq": 11,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 80,
+          "owners": true,
+          "admins": true
+        }
+      },
+      {
+        "seq": 13,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "review",
+        "detail": "inspect settings"
+      },
+      {
+        "seq": 15,
+        "step": "review",
+        "event": "correction",
+        "detail": "scope"
+      },
+      {
+        "seq": 16,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 17,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 1000,
+          "threshold": 80,
+          "actual": true,
+          "owners": true,
+          "admins": true
+        }
+      },
+      {
+        "seq": 18,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      },
+      {
+        "seq": 19,
+        "step": "confirm",
+        "event": "confirmation_checked",
+        "detail": "budget list"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 106,
+    "completed": true,
+    "correct": false,
+    "actions": 17,
+    "errors": [],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 1000,
+      "threshold": 50,
+      "actual": true,
+      "owners": false,
+      "admins": false
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 3,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 5,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 7,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "Atlas"
+        }
+      },
+      {
+        "seq": 9,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 1000
+        }
+      },
+      {
+        "seq": 11,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 50,
+          "owners": false,
+          "admins": false
+        }
+      },
+      {
+        "seq": 13,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 14,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 15,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 1000,
+          "threshold": 50,
+          "actual": true,
+          "owners": false,
+          "admins": false
+        }
+      },
+      {
+        "seq": 16,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      },
+      {
+        "seq": 17,
+        "step": "confirm",
+        "event": "confirmation_checked",
+        "detail": "budget list"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 107,
+    "completed": true,
+    "correct": false,
+    "actions": 18,
+    "errors": [
+      "navigation",
+      "scope_default"
+    ],
+    "saved": {
+      "scope": "all_projects",
+      "amount": 800,
+      "threshold": 50,
+      "actual": true,
+      "owners": true,
+      "admins": false
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "wrong_turn",
+        "detail": "navigation uncertainty"
+      },
+      {
+        "seq": 3,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 5,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 7,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 9,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "all_projects"
+        }
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 11,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 800
+        }
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 13,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 50,
+          "owners": true,
+          "admins": false
+        }
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 15,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 16,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "all_projects",
+          "amount": 800,
+          "threshold": 50,
+          "actual": true,
+          "owners": true,
+          "admins": false
+        }
+      },
+      {
+        "seq": 17,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      },
+      {
+        "seq": 18,
+        "step": "confirm",
+        "event": "confirmation_checked",
+        "detail": "budget list"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 108,
+    "completed": true,
+    "correct": true,
+    "actions": 18,
+    "errors": [
+      "navigation"
+    ],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 800,
+      "threshold": 100,
+      "actual": true,
+      "owners": true,
+      "admins": false
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "wrong_turn",
+        "detail": "navigation uncertainty"
+      },
+      {
+        "seq": 3,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 5,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 7,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 9,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "Atlas"
+        }
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 11,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 800
+        }
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 13,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 100,
+          "owners": true,
+          "admins": false
+        }
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 15,
+        "step": "review",
+        "event": "review",
+        "detail": "inspect settings"
+      },
+      {
+        "seq": 16,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 17,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 800,
+          "threshold": 100,
+          "actual": true,
+          "owners": true,
+          "admins": false
+        }
+      },
+      {
+        "seq": 18,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 109,
+    "completed": true,
+    "correct": false,
+    "actions": 18,
+    "errors": [
+      "navigation"
+    ],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 800,
+      "threshold": 50,
+      "actual": true,
+      "owners": false,
+      "admins": true
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "wrong_turn",
+        "detail": "navigation uncertainty"
+      },
+      {
+        "seq": 3,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 5,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 7,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 9,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "Atlas"
+        }
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 11,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 800
+        }
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 13,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 50,
+          "owners": false,
+          "admins": true
+        }
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 15,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 16,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 800,
+          "threshold": 50,
+          "actual": true,
+          "owners": false,
+          "admins": true
+        }
+      },
+      {
+        "seq": 17,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      },
+      {
+        "seq": 18,
+        "step": "confirm",
+        "event": "confirmation_checked",
+        "detail": "budget list"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 110,
+    "completed": true,
+    "correct": false,
+    "actions": 19,
+    "errors": [
+      "scope_default"
+    ],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 800,
+      "threshold": 50,
+      "actual": true,
+      "owners": true,
+      "admins": false
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 3,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 5,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 7,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "all_projects"
+        }
+      },
+      {
+        "seq": 9,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 800
+        }
+      },
+      {
+        "seq": 11,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 50,
+          "owners": true,
+          "admins": false
+        }
+      },
+      {
+        "seq": 13,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "review",
+        "detail": "inspect settings"
+      },
+      {
+        "seq": 15,
+        "step": "review",
+        "event": "correction",
+        "detail": "scope"
+      },
+      {
+        "seq": 16,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 17,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 800,
+          "threshold": 50,
+          "actual": true,
+          "owners": true,
+          "admins": false
+        }
+      },
+      {
+        "seq": 18,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      },
+      {
+        "seq": 19,
+        "step": "confirm",
+        "event": "confirmation_checked",
+        "detail": "budget list"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 111,
+    "completed": true,
+    "correct": true,
+    "actions": 19,
+    "errors": [
+      "navigation"
+    ],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 800,
+      "threshold": 100,
+      "actual": true,
+      "owners": true,
+      "admins": false
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 3,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "wrong_turn",
+        "detail": "navigation uncertainty"
+      },
+      {
+        "seq": 5,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 7,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 9,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "Atlas"
+        }
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 11,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 800
+        }
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 13,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 100,
+          "owners": true,
+          "admins": false
+        }
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 15,
+        "step": "review",
+        "event": "review",
+        "detail": "inspect settings"
+      },
+      {
+        "seq": 16,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 17,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 800,
+          "threshold": 100,
+          "actual": true,
+          "owners": true,
+          "admins": false
+        }
+      },
+      {
+        "seq": 18,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      },
+      {
+        "seq": 19,
+        "step": "confirm",
+        "event": "confirmation_checked",
+        "detail": "budget list"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 112,
+    "completed": true,
+    "correct": true,
+    "actions": 19,
+    "errors": [],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 1000,
+      "threshold": 80,
+      "actual": true,
+      "owners": true,
+      "admins": false
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 3,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 5,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 7,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "Atlas"
+        }
+      },
+      {
+        "seq": 9,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 1000
+        }
+      },
+      {
+        "seq": 11,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 80,
+          "owners": false,
+          "admins": true
+        }
+      },
+      {
+        "seq": 13,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "review",
+        "detail": "inspect settings"
+      },
+      {
+        "seq": 15,
+        "step": "review",
+        "event": "correction",
+        "detail": "owners"
+      },
+      {
+        "seq": 16,
+        "step": "review",
+        "event": "correction",
+        "detail": "admins"
+      },
+      {
+        "seq": 17,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 18,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 1000,
+          "threshold": 80,
+          "actual": true,
+          "owners": true,
+          "admins": false
+        }
+      },
+      {
+        "seq": 19,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 113,
+    "completed": true,
+    "correct": false,
+    "actions": 19,
+    "errors": [
+      "navigation"
+    ],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 800,
+      "threshold": 50,
+      "actual": true,
+      "owners": true,
+      "admins": true
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "wrong_turn",
+        "detail": "navigation uncertainty"
+      },
+      {
+        "seq": 3,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 5,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 7,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 9,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "Atlas"
+        }
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 11,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 800
+        }
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 13,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 50,
+          "owners": true,
+          "admins": true
+        }
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 15,
+        "step": "review",
+        "event": "review",
+        "detail": "inspect settings"
+      },
+      {
+        "seq": 16,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 17,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 800,
+          "threshold": 50,
+          "actual": true,
+          "owners": true,
+          "admins": true
+        }
+      },
+      {
+        "seq": 18,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      },
+      {
+        "seq": 19,
+        "step": "confirm",
+        "event": "confirmation_checked",
+        "detail": "budget list"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 114,
+    "completed": false,
+    "correct": false,
+    "actions": 2,
+    "errors": [
+      "navigation"
+    ],
+    "saved": null,
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "wrong_turn",
+        "detail": "navigation uncertainty"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 115,
+    "completed": false,
+    "correct": false,
+    "actions": 4,
+    "errors": [
+      "navigation"
+    ],
+    "saved": null,
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 3,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "wrong_turn",
+        "detail": "navigation uncertainty"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 116,
+    "completed": true,
+    "correct": false,
+    "actions": 17,
+    "errors": [
+      "scope_default"
+    ],
+    "saved": {
+      "scope": "all_projects",
+      "amount": 800,
+      "threshold": 50,
+      "actual": true,
+      "owners": true,
+      "admins": true
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 3,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 5,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 7,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "all_projects"
+        }
+      },
+      {
+        "seq": 9,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 800
+        }
+      },
+      {
+        "seq": 11,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 50,
+          "owners": true,
+          "admins": true
+        }
+      },
+      {
+        "seq": 13,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 14,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 15,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "all_projects",
+          "amount": 800,
+          "threshold": 50,
+          "actual": true,
+          "owners": true,
+          "admins": true
+        }
+      },
+      {
+        "seq": 16,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      },
+      {
+        "seq": 17,
+        "step": "confirm",
+        "event": "confirmation_checked",
+        "detail": "budget list"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 117,
+    "completed": true,
+    "correct": false,
+    "actions": 19,
+    "errors": [
+      "navigation"
+    ],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 800,
+      "threshold": 50,
+      "actual": true,
+      "owners": true,
+      "admins": true
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "wrong_turn",
+        "detail": "navigation uncertainty"
+      },
+      {
+        "seq": 3,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 5,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 7,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 9,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "Atlas"
+        }
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 11,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 800
+        }
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 13,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 50,
+          "owners": true,
+          "admins": true
+        }
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 15,
+        "step": "review",
+        "event": "review",
+        "detail": "inspect settings"
+      },
+      {
+        "seq": 16,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 17,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 800,
+          "threshold": 50,
+          "actual": true,
+          "owners": true,
+          "admins": true
+        }
+      },
+      {
+        "seq": 18,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      },
+      {
+        "seq": 19,
+        "step": "confirm",
+        "event": "confirmation_checked",
+        "detail": "budget list"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 118,
+    "completed": false,
+    "correct": false,
+    "actions": 4,
+    "errors": [
+      "navigation"
+    ],
+    "saved": null,
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 3,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "wrong_turn",
+        "detail": "navigation uncertainty"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 119,
+    "completed": true,
+    "correct": true,
+    "actions": 18,
+    "errors": [
+      "navigation"
+    ],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 1000,
+      "threshold": 80,
+      "actual": true,
+      "owners": true,
+      "admins": false
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 3,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "wrong_turn",
+        "detail": "navigation uncertainty"
+      },
+      {
+        "seq": 5,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 7,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 9,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "Atlas"
+        }
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 11,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 1000
+        }
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 13,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 80,
+          "owners": true,
+          "admins": false
+        }
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 15,
+        "step": "review",
+        "event": "review",
+        "detail": "inspect settings"
+      },
+      {
+        "seq": 16,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 17,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 1000,
+          "threshold": 80,
+          "actual": true,
+          "owners": true,
+          "admins": false
+        }
+      },
+      {
+        "seq": 18,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 120,
+    "completed": true,
+    "correct": false,
+    "actions": 20,
+    "errors": [
+      "navigation"
+    ],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 800,
+      "threshold": 50,
+      "actual": true,
+      "owners": true,
+      "admins": false
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 3,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "wrong_turn",
+        "detail": "navigation uncertainty"
+      },
+      {
+        "seq": 5,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 7,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 9,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "Atlas"
+        }
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 11,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 800
+        }
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 13,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 50,
+          "owners": false,
+          "admins": false
+        }
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 15,
+        "step": "review",
+        "event": "review",
+        "detail": "inspect settings"
+      },
+      {
+        "seq": 16,
+        "step": "review",
+        "event": "correction",
+        "detail": "owners"
+      },
+      {
+        "seq": 17,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 18,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 800,
+          "threshold": 50,
+          "actual": true,
+          "owners": true,
+          "admins": false
+        }
+      },
+      {
+        "seq": 19,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      },
+      {
+        "seq": 20,
+        "step": "confirm",
+        "event": "confirmation_checked",
+        "detail": "budget list"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 121,
+    "completed": true,
+    "correct": false,
+    "actions": 18,
+    "errors": [
+      "navigation",
+      "scope_default"
+    ],
+    "saved": {
+      "scope": "all_projects",
+      "amount": 1000,
+      "threshold": 80,
+      "actual": true,
+      "owners": true,
+      "admins": true
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "wrong_turn",
+        "detail": "navigation uncertainty"
+      },
+      {
+        "seq": 3,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 5,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 7,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 9,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "all_projects"
+        }
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 11,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 1000
+        }
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 13,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 80,
+          "owners": true,
+          "admins": true
+        }
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 15,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 16,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "all_projects",
+          "amount": 1000,
+          "threshold": 80,
+          "actual": true,
+          "owners": true,
+          "admins": true
+        }
+      },
+      {
+        "seq": 17,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      },
+      {
+        "seq": 18,
+        "step": "confirm",
+        "event": "confirmation_checked",
+        "detail": "budget list"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 122,
+    "completed": true,
+    "correct": false,
+    "actions": 16,
+    "errors": [],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 1000,
+      "threshold": 50,
+      "actual": true,
+      "owners": false,
+      "admins": true
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 3,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 5,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 7,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "Atlas"
+        }
+      },
+      {
+        "seq": 9,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 1000
+        }
+      },
+      {
+        "seq": 11,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 50,
+          "owners": false,
+          "admins": true
+        }
+      },
+      {
+        "seq": 13,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 14,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 15,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 1000,
+          "threshold": 50,
+          "actual": true,
+          "owners": false,
+          "admins": true
+        }
+      },
+      {
+        "seq": 16,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 123,
+    "completed": false,
+    "correct": false,
+    "actions": 2,
+    "errors": [
+      "navigation"
+    ],
+    "saved": null,
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "wrong_turn",
+        "detail": "navigation uncertainty"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 124,
+    "completed": true,
+    "correct": false,
+    "actions": 17,
+    "errors": [],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 1000,
+      "threshold": 80,
+      "actual": true,
+      "owners": true,
+      "admins": true
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 3,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 5,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 7,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "Atlas"
+        }
+      },
+      {
+        "seq": 9,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 1000
+        }
+      },
+      {
+        "seq": 11,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 80,
+          "owners": true,
+          "admins": true
+        }
+      },
+      {
+        "seq": 13,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "review",
+        "detail": "inspect settings"
+      },
+      {
+        "seq": 15,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 16,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 1000,
+          "threshold": 80,
+          "actual": true,
+          "owners": true,
+          "admins": true
+        }
+      },
+      {
+        "seq": 17,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 125,
+    "completed": true,
+    "correct": false,
+    "actions": 19,
+    "errors": [
+      "navigation"
+    ],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 1000,
+      "threshold": 50,
+      "actual": true,
+      "owners": true,
+      "admins": true
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 3,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "wrong_turn",
+        "detail": "navigation uncertainty"
+      },
+      {
+        "seq": 5,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 7,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 9,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "Atlas"
+        }
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 11,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 1000
+        }
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 13,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 50,
+          "owners": true,
+          "admins": true
+        }
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 15,
+        "step": "review",
+        "event": "review",
+        "detail": "inspect settings"
+      },
+      {
+        "seq": 16,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 17,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 1000,
+          "threshold": 50,
+          "actual": true,
+          "owners": true,
+          "admins": true
+        }
+      },
+      {
+        "seq": 18,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      },
+      {
+        "seq": 19,
+        "step": "confirm",
+        "event": "confirmation_checked",
+        "detail": "budget list"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 126,
+    "completed": true,
+    "correct": true,
+    "actions": 17,
+    "errors": [],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 1000,
+      "threshold": 80,
+      "actual": true,
+      "owners": true,
+      "admins": false
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 3,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 5,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 7,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "Atlas"
+        }
+      },
+      {
+        "seq": 9,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 1000
+        }
+      },
+      {
+        "seq": 11,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 80,
+          "owners": true,
+          "admins": false
+        }
+      },
+      {
+        "seq": 13,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "review",
+        "detail": "inspect settings"
+      },
+      {
+        "seq": 15,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 16,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 1000,
+          "threshold": 80,
+          "actual": true,
+          "owners": true,
+          "admins": false
+        }
+      },
+      {
+        "seq": 17,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 127,
+    "completed": true,
+    "correct": false,
+    "actions": 17,
+    "errors": [
+      "navigation"
+    ],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 800,
+      "threshold": 100,
+      "actual": true,
+      "owners": false,
+      "admins": false
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "wrong_turn",
+        "detail": "navigation uncertainty"
+      },
+      {
+        "seq": 3,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 5,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 7,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 9,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "Atlas"
+        }
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 11,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 800
+        }
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 13,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 100,
+          "owners": false,
+          "admins": false
+        }
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 15,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 16,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 800,
+          "threshold": 100,
+          "actual": true,
+          "owners": false,
+          "admins": false
+        }
+      },
+      {
+        "seq": 17,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 128,
+    "completed": true,
+    "correct": false,
+    "actions": 17,
+    "errors": [
+      "navigation"
+    ],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 800,
+      "threshold": 100,
+      "actual": true,
+      "owners": true,
+      "admins": true
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 3,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "wrong_turn",
+        "detail": "navigation uncertainty"
+      },
+      {
+        "seq": 5,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 7,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 9,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "Atlas"
+        }
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 11,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 800
+        }
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 13,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 100,
+          "owners": true,
+          "admins": true
+        }
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 15,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 16,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 800,
+          "threshold": 100,
+          "actual": true,
+          "owners": true,
+          "admins": true
+        }
+      },
+      {
+        "seq": 17,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      }
+    ]
+  },
+  {
+    "participant_id": "P004_DEMO",
+    "seed": 129,
+    "completed": true,
+    "correct": false,
+    "actions": 19,
+    "errors": [],
+    "saved": {
+      "scope": "Atlas",
+      "amount": 1000,
+      "threshold": 50,
+      "actual": true,
+      "owners": false,
+      "admins": false
+    },
+    "events": [
+      {
+        "seq": 1,
+        "step": "find_billing",
+        "event": "step_entered",
+        "detail": "find_billing"
+      },
+      {
+        "seq": 2,
+        "step": "find_billing",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 3,
+        "step": "open_budgets",
+        "event": "step_entered",
+        "detail": "open_budgets"
+      },
+      {
+        "seq": 4,
+        "step": "open_budgets",
+        "event": "navigate",
+        "detail": "target reached"
+      },
+      {
+        "seq": 5,
+        "step": "create_budget",
+        "event": "step_entered",
+        "detail": "create_budget"
+      },
+      {
+        "seq": 6,
+        "step": "create_budget",
+        "event": "click",
+        "detail": "create budget"
+      },
+      {
+        "seq": 7,
+        "step": "set_scope",
+        "event": "step_entered",
+        "detail": "set_scope"
+      },
+      {
+        "seq": 8,
+        "step": "set_scope",
+        "event": "field_changed",
+        "detail": {
+          "scope": "Atlas"
+        }
+      },
+      {
+        "seq": 9,
+        "step": "set_amount",
+        "event": "step_entered",
+        "detail": "set_amount"
+      },
+      {
+        "seq": 10,
+        "step": "set_amount",
+        "event": "field_changed",
+        "detail": {
+          "amount": 1000
+        }
+      },
+      {
+        "seq": 11,
+        "step": "set_alerts",
+        "event": "step_entered",
+        "detail": "set_alerts"
+      },
+      {
+        "seq": 12,
+        "step": "set_alerts",
+        "event": "field_changed",
+        "detail": {
+          "threshold": 50,
+          "owners": false,
+          "admins": true
+        }
+      },
+      {
+        "seq": 13,
+        "step": "review",
+        "event": "step_entered",
+        "detail": "review"
+      },
+      {
+        "seq": 14,
+        "step": "review",
+        "event": "review",
+        "detail": "inspect settings"
+      },
+      {
+        "seq": 15,
+        "step": "review",
+        "event": "correction",
+        "detail": "admins"
+      },
+      {
+        "seq": 16,
+        "step": "save",
+        "event": "step_entered",
+        "detail": "save"
+      },
+      {
+        "seq": 17,
+        "step": "save",
+        "event": "save_succeeded",
+        "detail": {
+          "scope": "Atlas",
+          "amount": 1000,
+          "threshold": 50,
+          "actual": true,
+          "owners": false,
+          "admins": false
+        }
+      },
+      {
+        "seq": 18,
+        "step": "confirm",
+        "event": "step_entered",
+        "detail": "confirm"
+      },
+      {
+        "seq": 19,
+        "step": "confirm",
+        "event": "confirmation_checked",
+        "detail": "budget list"
+      }
+    ]
+  }
+]

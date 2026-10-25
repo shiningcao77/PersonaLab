@@ -1,0 +1,10 @@
+{
+  "participant_id": "P004_DEMO",
+  "billing_knowledge": "limited",
+  "traits": {
+    "accuracy": 3,
+    "persistence": 4,
+    "caution": 3,
+    "attention": 3
+  }
+}

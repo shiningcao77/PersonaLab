@@ -1,0 +1,31 @@
+participant_id,seed,completed,correct,actions,errors
+P004_DEMO,100,True,False,20,"[""navigation"", ""scope_default""]"
+P004_DEMO,101,True,False,19,"[""navigation"", ""scope_default""]"
+P004_DEMO,102,True,False,18,"[""navigation"", ""navigation""]"
+P004_DEMO,103,True,False,18,"[""scope_default""]"
+P004_DEMO,104,True,False,19,"[""scope_default""]"
+P004_DEMO,105,True,False,19,"[""scope_default""]"
+P004_DEMO,106,True,False,17,[]
+P004_DEMO,107,True,False,18,"[""navigation"", ""scope_default""]"
+P004_DEMO,108,True,True,18,"[""navigation""]"
+P004_DEMO,109,True,False,18,"[""navigation""]"
+P004_DEMO,110,True,False,19,"[""scope_default""]"
+P004_DEMO,111,True,True,19,"[""navigation""]"
+P004_DEMO,112,True,True,19,[]
+P004_DEMO,113,True,False,19,"[""navigation""]"
+P004_DEMO,114,False,False,2,"[""navigation""]"
+P004_DEMO,115,False,False,4,"[""navigation""]"
+P004_DEMO,116,True,False,17,"[""scope_default""]"
+P004_DEMO,117,True,False,19,"[""navigation""]"
+P004_DEMO,118,False,False,4,"[""navigation""]"
+P004_DEMO,119,True,True,18,"[""navigation""]"
+P004_DEMO,120,True,False,20,"[""navigation""]"
+P004_DEMO,121,True,False,18,"[""navigation"", ""scope_default""]"
+P004_DEMO,122,True,False,16,[]
+P004_DEMO,123,False,False,2,"[""navigation""]"
+P004_DEMO,124,True,False,17,[]
+P004_DEMO,125,True,False,19,"[""navigation""]"
+P004_DEMO,126,True,True,17,[]
+P004_DEMO,127,True,False,17,"[""navigation""]"
+P004_DEMO,128,True,False,17,"[""navigation""]"
+P004_DEMO,129,True,False,19,[]
