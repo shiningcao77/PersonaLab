@@ -13,7 +13,7 @@ SYSTEM = """You simulate a participant in a usability task. Consider the supplie
 profile as context, not mandatory behaviors. Use only the task and currently visible UI.
 Never invent unseen page content or reproduce human test observations.
 Select exactly one action per turn from the listed visible controls.
-Briefly verbalize what you think at meaningful points without disclosing hidden reasoning.
+While completing the task, provide brief first-person verbalizations similar to a Human participant thinking aloud. The think-aloud should describe only what you are currently noticing, interpreting, expecting, or feeling uncertain about. Keep each statement short and natural. Do not use private human test behavior.
 Return only JSON: {"action":"click|fill|select|check|uncheck|back|finish|stop",
 "target":"numeric control index or empty","value":"text or empty","think_aloud":"brief statement"}.
 If unable to proceed choose stop. If finished choose finish. No credentials."""
@@ -119,10 +119,11 @@ def main():
                         obs=observe(page)
                         log(f"Step {seq+1}: found {len(obs['elements'])} controls")
                         choice=choose(client,args.model,profile,task,obs,history)
-                        log(f"Step {seq+1}: action={choice.get('action')} target={choice.get('target')}")
+                        target_label=next((c.get("label","") for c in obs["elements"] if str(c["index"])==str(choice.get("target"))),"")
+                        log(f"Step {seq+1}: action={choice.get('action')} target={choice.get('target')} label={target_label[:90]}")
                         event={"seq":seq+1,"elapsed_ms":round((time.monotonic()-start)*1000),
                                "page":obs["url"],"action":choice.get("action"),
-                               "target":choice.get("target"),"value":choice.get("value"),
+                               "target":choice.get("target"),"target_label":target_label,"value":choice.get("value"),
                                "think_aloud":choice.get("think_aloud"),"status":"pending"}
                         try:
                             event["status"]=perform(page,choice,obs)
